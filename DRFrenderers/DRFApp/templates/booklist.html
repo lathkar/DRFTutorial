@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <h2 style="text-align:center">List of Books</h2>
+        <ul>
+            {% for book in books %}
+            <li>Title : {{ book.title }}</li>
+            <li>Author : {{ book.author }}</li>
+            <li>Price : {{ book.price }}</li>
+            <hr/>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
